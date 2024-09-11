@@ -52,7 +52,8 @@ body {
       flex-direction: column;
       gap: 2px;
       width: 80vw;
-      padding: 10px12px;
+      height: 70vh;
+      padding: 10px;
       box-sizing: border-box;
   }
 }
