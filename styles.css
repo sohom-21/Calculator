@@ -19,6 +19,25 @@ body {
 .btn {
     width: 487px;
     height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        width: 60vw;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 70vw;
+        height: 60px;
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 475px) {
@@ -46,18 +65,28 @@ body {
     gap: 10px;
 }
 
+@media (max-width: 1024px) {
+    .calculator {
+        width: 70vw;
+        padding: 15px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 75vw;
+        padding: 12px;
+        gap: 5px;
+    }
+}
+
 @media (max-width: 475px) {
     .calculator {
-      display: flex;
-      width: 80vw;
-      height: auto;
-      padding: 23px;
-      gap: 2px;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
+        width: 80vw;
+        height: auto;
+        padding: 10px;
+        gap: 2px;
     }
 }
 
@@ -72,9 +101,25 @@ body {
     text-align: right;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 1024px) {
+    .calculator input {
+        width: 60vw;
+        padding: 20px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
     .calculator input {
         width: 70vw;
+        padding: 18px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 475px) {
+    .calculator input {
+        width: 80vw;
         padding: 16px;
         font-size: 24px;
     }
@@ -96,11 +141,25 @@ input::placeholder {
     box-shadow: 0px -2px 14px rgba(255, 255, 255, 0.719);
     color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn button:active {
-    transform: scale(0.8);
-    transition: all 0.05s ease-out;
+@media (max-width: 1024px) {
+    .btn button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn button {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 475px) {
@@ -108,8 +167,6 @@ input::placeholder {
         width: 50px;
         height: 50px;
         font-size: 1.2rem;
-        margin: 8px 16px;
-        padding: 8px;
     }
 }
 
