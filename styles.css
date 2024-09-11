@@ -47,9 +47,9 @@ body {
 
 /* Media Query for Calculator Input */
 
-@media (max-width: 768px) {
+@media (max-width: 475px) {
          .calculator input {
-                  width: 310px;
+                  width: 110px;
                   padding: 16px;
                   font-size: 24px;
          }
@@ -80,7 +80,7 @@ input::placeholder {
 
 /* Media Query for Button Styles */
 
-@media (max-width: 768px) {
+@media (max-width: 475px) {
          .btn button {
            width: 50px;
            height: 50px;
@@ -103,7 +103,7 @@ input::placeholder {
 
 /* Media Query for Button Color Styles */
 
-@media (max-width: 768px) {
+@media (max-width: 475px) {
          .btn-color {
            background: linear-gradient(45deg, rgb(159, 108, 253) 25%, rgba(160, 163, 190, 0.808) 75%);
            color: rgb(0, 0, 0);
@@ -119,7 +119,7 @@ input::placeholder {
          color: rgb(0, 0, 0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 475px) {
          .btn button:hover {
            background-color: rgb(255, 254, 254);
            color: rgb(0, 0, 0);
