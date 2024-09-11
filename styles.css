@@ -33,6 +33,15 @@ body {
          padding: 16px 10px;
 }
 
+@media (max-width: 475px) {
+  .calculator {
+      /* Add your styles here */
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+}
+
 .calculator input {
          width: 432px;
          border: transparent;
