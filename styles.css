@@ -41,11 +41,9 @@ body {
          box-sizing: border-box;
          padding: 16px 10px;
          gap: 10px;
-         width: 100vw;
-         height:100vh;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 470px) {
   .calculator {
       /* Add your styles here */
       display: flex;
