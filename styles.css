@@ -1,148 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-         width: 100%;
-         height: 100vh;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background: linear-gradient(45deg, rgb(128, 76, 224) 25%, rgba(190, 160, 160, 0.808) 75%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(128, 76, 224) 25%, rgba(190, 160, 160, 0.808) 75%);
 }
-.btn{
-  width: 487px;
-  height: 87px;
+
+.btn {
+    width: 487px;
+    height: 87px;
 }
+
 @media (max-width: 475px) {
     .btn {
-        /* Add your styles here */
+        width: 80vw;
         height: 50px;
         margin: 8px 16px;
         font-size: 1.2rem;
         padding: 8px;
     }
 }
+
 .calculator {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         border: 1px solid rgba(255, 255, 255, 0.425);
-         padding: 20px;
-         border-radius: 22px;
-         box-shadow: 5px 4px 15px rgb(0, 0, 0);
-         background-color: rgb(0, 0, 0);
-         box-sizing: border-box;
-         padding: 16px 10px;
-         gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 5px 4px 15px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    padding: 16px 10px;
+    gap: 10px;
 }
 
-@media (max-width: 470px) {
-  .calculator {
-      /* Add your styles here */
+@media (max-width: 475px) {
+    .calculator {
       display: flex;
-      flex-direction: column;
-      gap: 2px;
       width: 80vw;
-      height: 70vh;
-      padding: 10px;
-      box-sizing: border-box;
-  }
+      height: auto;
+      padding: 23px;
+      gap: 2px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 .calculator input {
-         width: 432px;
-         border: transparent;
-         padding: 24px;
-         margin: 10px;
-         /* background: transparent; */
-         box-shadow: -3px 2px 12px rgb(255 255 255 / 36%);
-         border-radius: 7px;
-         font-size: 34px;
-         text-align: right;
+    width: 432px;
+    border: transparent;
+    padding: 24px;
+    margin: 10px;
+    box-shadow: -3px 2px 12px rgb(255 255 255 / 36%);
+    border-radius: 7px;
+    font-size: 34px;
+    text-align: right;
 }
 
-/* Media Query for Calculator Input */
-
-@media (max-width: 470px) {
-         .calculator input {
-                  width: 60vw;
-                  padding: 16px;
-                  font-size: 24px;
-         }
+@media (max-width: 475px) {
+    .calculator input {
+        width: 70vw;
+        padding: 16px;
+        font-size: 24px;
+    }
 }
 
 input::placeholder {
-         color: rgb(0, 0, 0);
-         font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
 }
 
 .btn button {
-         border: transparent;
-         width: 70px;
-         height: 70px;
-         margin: 11px 24px;
-         border-radius: 50%;
-         font-family: 'Poppins', sans-serif;
-         font-size: 1.57rem;
-         box-shadow: 0px -2px 14px rgba(255, 255, 255, 0.719);
-         color: white;
-         cursor: pointer;
+    border: transparent;
+    width: 70px;
+    height: 70px;
+    margin: 11px 24px;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.57rem;
+    box-shadow: 0px -2px 14px rgba(255, 255, 255, 0.719);
+    color: white;
+    cursor: pointer;
 }
 
 .btn button:active {
-         transform: scale(0.8);
-         transition: all 0.05s ease-out;
+    transform: scale(0.8);
+    transition: all 0.05s ease-out;
 }
 
-/* Media Query for Button Styles */
-
-@media (max-width: 470px) {
-         .btn button {
-           width: 50px;
-           height: 50px;
-           font-size: 1.2rem
-         }
+@media (max-width: 475px) {
+    .btn button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        margin: 8px 16px;
+        padding: 8px;
+    }
 }
 
 .btn-transparent {
-         background: transparent;
-         font-weight: 600;
+    background: transparent;
+    font-weight: 600;
 }
 
 .btn-color {
-         background: linear-gradient(45deg, rgb(159, 108, 253) 25%, rgba(160, 163, 190, 0.808) 75%);
-         color: rgb(0, 0, 0);
-         font-weight: 600;
+    background: linear-gradient(45deg, rgb(159, 108, 253) 25%, rgba(160, 163, 190, 0.808) 75%);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
-/* Media Query for Button Color Styles */
-
-@media (max-width: 470px) {
-         .btn-color {
-           background: linear-gradient(45deg, rgb(159, 108, 253) 25%, rgba(160, 163, 190, 0.808) 75%);
-           color: rgb(0, 0, 0);
-           font-weight: 600;
-           padding: 11px;
-           box-sizing: border-box;
-         }
+@media (max-width: 475px) {
+    .btn-color {
+        padding: 11px;
+        box-sizing: border-box;
+    }
 }
-
 
 .btn button:hover {
-         background-color: rgb(255, 254, 254);
-         color: rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
 }
 
-@media (max-width: 470px) {
-         .btn button:hover {
-           background-color: rgb(255, 254, 254);
-           color: rgb(0, 0, 0);
-         }
+@media (max-width: 475px) {
+    .btn button:hover {
+        background-color: rgb(255, 254, 254);
+        color: rgb(0, 0, 0);
+    }
 }
